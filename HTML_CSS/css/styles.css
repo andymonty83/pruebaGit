@@ -1,0 +1,290 @@
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    color: purple;
+
+}
+
+a:visited {
+    color: red;
+}
+a:hover {
+    background-color: green;
+}
+
+p {
+    color: green;
+}
+
+/*Estilo CSS del Formulario */
+
+    .formulario-contacto {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: sans-serif;
+    }
+
+    .grupo-campo {
+        margin-bottom: 20px;
+    }
+
+    .grupo-campo > label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .grupo-campo input[type="text"],
+    .grupo-campo input[type="email"],
+    .grupo-campo textarea,
+    .grupo-campo select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 14px;
+        background-color: white;
+    }
+
+    .grupo-campo textarea {
+        resize: vertical;
+    }
+
+    .grupo-campo input:focus,
+    .grupo-campo textarea:focus,
+    .grupo-campo select:focus {
+        border-color: #007BFF;
+        outline: none;
+    }
+
+    .lista-opciones {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-top: 4px;
+    }
+
+    .opcion-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        color: #555;
+        cursor: pointer;
+    }
+
+    .opcion-item input {
+        cursor: pointer;
+        margin: 0;
+    }
+
+    /* NUEVO: Contenedor para alinear los dos botones */
+    .contenedor-botones {
+        display: flex;
+        gap: 12px; /* Espacio entre los dos botones */
+        margin-top: 25px;
+    }
+
+    /* Estilo base compartido por ambos botones */
+    .btn {
+        flex: 1; /* Hace que ambos botones midan exactamente lo mismo */
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+    /* Estilo específico para Enviar (Llamativo) */
+    .boton-enviar {
+        background-color: #007BFF;
+        color: white;
+    }
+
+    .boton-enviar:hover {
+        background-color: #0056b3;
+    }
+
+    /* Estilo específico para Limpiar (Más discreto) */
+    .boton-limpiar {
+        background-color: #e0e0e0;
+        color: #333;
+    }
+
+    .boton-limpiar:hover {
+        background-color: #d5d5d5;
+        color: #000;
+    }
+
+    /* Estilo específico para la tabla */
+    .tabla-basica {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        border-collapse: collapse; /* Evita bordes dobles molestos */
+        font-family: sans-serif;
+        font-size: 14px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .tabla-basica th, 
+    .tabla-basica td {
+        padding: 12px 15px; /* Espaciado interno para que respiren los datos */
+        text-align: left; /* Alinea el texto a la izquierda */
+    }
+
+    /* Estilo para la fila de encabezados */
+    .tabla-basica th {
+        background-color: #007BFF;
+        color: white;
+        font-weight: bold;
+    }
+
+    /* Bordes sutiles entre filas */
+    .tabla-basica tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    /* Filas con colores alternos (efecto cebra) para mejorar la lectura */
+    .tabla-basica tr:nth-child(even) {
+        background-color: #f3f3f3;
+    }
+
+    /* Efecto visual al pasar el ratón por encima de una fila */
+    .tabla-basica tr:hover {
+        background-color: #f1f7ff;
+    }
+
+
+    /* ESTILOS DE YOSHI */
+    /* El lienzo donde se dibuja */
+  .yoshi-canvas {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff; /* Fondo azul cielo suave */
+    font-family: sans-serif;
+  }
+
+  /* Contenedor del personaje y la base de la cabeza (verde) */
+  .yoshi {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #38b54a; /* Verde Yoshi */
+    border-radius: 50% 50% 40% 40%;
+    box-shadow: inset -4px -4px 0px rgba(0,0,0,0.1);
+  }
+
+  /* La enorme nariz característica */
+  .yoshi .nose {
+    position: absolute;
+    width: 95px;
+    height: 85px;
+    background-color: #38b54a;
+    border-radius: 60% 40% 40% 60%;
+    left: -60px;
+    top: 25px;
+    box-shadow: inset 4px 4px 0px rgba(255,255,255,0.2);
+  }
+
+  /* La mejilla blanca inferior */
+  .yoshi .cheek {
+    position: absolute;
+    width: 80px;
+    height: 65px;
+    background-color: #ffffff;
+    border-radius: 50% 50% 60% 60%;
+    left: -35px;
+    top: 55px;
+    box-shadow: 0 4px 0px rgba(0,0,0,0.05);
+  }
+
+  /* Ojo trasero (el que está más lejos) */
+  .yoshi .eye-back {
+    position: absolute;
+    width: 35px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50% 50% 40% 40%;
+    left: 20px;
+    top: -35px;
+    border: 3px solid #38b54a;
+  }
+
+  /* Ojo delantero */
+  .yoshi .eye-front {
+    position: absolute;
+    width: 38px;
+    height: 65px;
+    background-color: #ffffff;
+    border-radius: 50% 50% 40% 40%;
+    left: 45px;
+    top: -40px;
+    z-index: 2; /* Se posiciona por delante de la nariz */
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+
+  /* La pupila alargada con su brillo */
+  .yoshi .pupil {
+    position: absolute;
+    width: 14px;
+    height: 35px;
+    background-color: #000000;
+    border-radius: 50%;
+    left: 8px;
+    top: 15px;
+  }
+  
+  /* Brillo blanco dentro de la pupila */
+  .yoshi .pupil::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    left: 3px;
+    top: 4px;
+  }
+
+  /* Las tres crestas/escamas rojas de la parte trasera de la cabeza */
+  .yoshi .shell-red {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #e52521; /* Rojo Mario/Yoshi */
+    border-radius: 50%;
+    right: -10px;
+    top: 10px;
+    /* Usamos box-shadow para duplicar la forma y hacer las otras dos crestas sin añadir más HTML */
+    box-shadow: -10px -22px 0 #e52521, -3px 22px 0 #e52521;
+    z-index: -1; /* Van detrás de la cabeza verde */
+  }
+
+  /* La montura/caparazón rojo de la espalda */
+  .yoshi .shell-saddle {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: #e52521;
+    border: 6px solid #ffffff;
+    border-radius: 50%;
+    right: -25px;
+    bottom: -15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  }

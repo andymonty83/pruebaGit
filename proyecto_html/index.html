@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante L'Antica 1925 - Presentación</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado y Navegación -->
+    <header class="sitio-header">
+        <div class="contenedor header-flex">
+            <div class="logo">
+                <h1>L'Antica <span>1925</span></h1>
+            </div>
+            <nav class="navegacion-principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#menu">Menú</a>
+                <a href="#historia">Historia</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero-seccion">
+        <div class="hero-contenido">
+            <h2>Alta Cocina con Raíces Tradicionales</h2>
+            <p>Un viaje de sabores que perdura a través del tiempo.</p>
+            <a href="#menu" class="btn btn-primario">Ver el Menú</a>
+        </div>
+    </section>
+
+    <main class="contenedor">
+
+        <!-- Sección Menú -->
+        <section id="menu" class="seccion">
+            <h2 class="titulo-seccion">Nuestro Menú</h2>
+            <p class="subtitulo-seccion">Platos elaborados con ingredientes frescos de la más alta calidad.</p>
+            
+            <div class="menu-cuadricula">
+                <!-- Bloque de Platos -->
+                <div class="categoria-menu">
+                    <h3>Platos Principales</h3>
+                    <ul class="lista-menu">
+                        <li>
+                            <div class="menu-item-header">
+                                <span class="nombre-plato">Ravioli de Setas Silvestres</span>
+                                <span class="precio">18 €</span>
+                            </div>
+                            <p class="descripcion-plato">Pasta artesanal rellena de hongos de temporada con salsa de trufa blanca.</p>
+                        </li>
+                        <li>
+                            <div class="menu-item-header">
+                                <span class="nombre-plato">Solomillo al Carbón</span>
+                                <span class="precio">24 €</span>
+                            </div>
+                            <p class="descripcion-plato">Corte tierno de res acompañado de patatas rústicas y reducción de vino tinto.</p>
+                        </li>
+                        <li>
+                            <div class="menu-item-header">
+                                <span class="nombre-plato">Salmón Glaseado</span>
+                                <span class="precio">21 €</span>
+                            </div>
+                            <p class="descripcion-plato">Filete de salmón fresco con costra de miel y mostaza, sobre cama de espárragos.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Bloque de Bebidas -->
+                <div class="categoria-menu">
+                    <h3>Bebidas e Infusiones</h3>
+                    <ul class="lista-menu">
+                        <li>
+                            <div class="menu-item-header">
+                                <span class="nombre-plato">Vino Reserva de la Casa</span>
+                                <span class="precio">6 € / Copa</span>
+                            </div>
+                            <p class="descripcion-plato">Selección especial tinta de viñedos locales de maduración lenta.</p>
+                        </li>
+                        <li>
+                            <div class="menu-item-header">
+                                <span class="nombre-plato">Cóctel de Cítricos Artesanal</span>
+                                <span class="precio">8 €</span>
+                            </div>
+                            <p class="descripcion-plato">Combinado refrescante con notas de lima, menta fresca y un toque secreto.</p>
+                        </li>
+                        <li>
+                            <div class="menu-item-header">
+                                <span class="nombre-plato">Limonada de Lavanda</span>
+                                <span class="precio">4 €</span>
+                            </div>
+                            <p class="descripcion-plato">Bebida natural preparada al momento con extracto orgánico de lavanda.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divisor">
+
+        <!-- Sección Historia -->
+        <section id="historia" class="seccion historia-seccion">
+            <h2 class="titulo-seccion">Nuestra Historia</h2>
+            <div class="historia-contenido">
+                <blockquote class="destacado-historia">
+                    "Fundado en 1925 bajo las luces de una pequeña cocina familiar..."
+                </blockquote>
+                <p>Todo comenzó hace más de un siglo, en el año 1925. Lo que empezó como una modesta casa de comidas a las afueras para alimentar a los trabajadores locales, pronto se convirtió en un rincón de culto culinario gracias a la dedicación de nuestros fundadores, la familia Rossini.</p>
+                <p>Con recetas transmitidas de generación en generación y manteniendo intacto el amor por los procesos artesanales y el fuego lento, hemos evolucionado sin perder nuestra identidad. Hoy, L'Antica 1925 combina ese legado centenario con las técnicas más vanguardistas del panorama gastronómico actual.</p>
+            </div>
+        </section>
+
+        <hr class="divisor">
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="seccion">
+            <h2 class="titulo-seccion">Contacto y Reservas</h2>
+            
+            <div class="contacto-cuadricula">
+                <!-- Columna 1: Formulario -->
+                <div class="contacto-formulario">
+                    <h3>Escríbenos</h3>
+                    <form action="" method="POST" class="formulario">
+                        <div class="grupo-campo">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                        </div>
+                        
+                        <div class="grupo-campo">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="comensales">Número de Asistentes</label>
+                            <select id="comensales" name="comensales" required>
+                                <option value="" disabled selected>Selecciona cantidad...</option>
+                                <option value="1-2">1 a 2 personas</option>
+                                <option value="3-4">3 a 4 personas</option>
+                                <option value="5+">5 o más personas</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="mensaje">Detalles o Alergias</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos si celebras una ocasión especial o tienes requerimientos dietéticos..."></textarea>
+                        </div>
+
+                        <div class="contenedor-botones">
+                            <button type="reset" class="btn btn-secundario">Limpiar</button>
+                            <button type="submit" class="btn btn-primario">Enviar Reserva</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Columna 2: Información del Sitio y Redes -->
+                <div class="contacto-info">
+                    <h3>Dónde Encontrarnos</h3>
+                    <p class="info-item"><strong>Dirección:</strong> Avenida de la Gastronomía, N.º 1925, Madrid, España</p>
+                    <p class="info-item"><strong>Teléfono:</strong> +34 912 345 678</p>
+                    <p class="info-item"><strong>Horario:</strong> Martes a Domingo: 13:00 - 23:30</p>
+                    
+                    <div class="redes-sociales">
+                        <h3>Síguenos en Redes</h3>
+                        <div class="enlaces-redes">
+                            <a href="https://x.com" target="_blank" class="red-enlace x-icono">X (Twitter)</a>
+                            <a href="https://instagram.com" target="_blank" class="red-enlace insta-icono">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="sitio-footer">
+        <p>&copy; 2026 Restaurante L'Antica 1925. Todos los derechos reservados. Diseñado para deleitar.</p>
+    </footer>
+
+</body>
+</html>
