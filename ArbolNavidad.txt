@@ -1,0 +1,43 @@
+
+
+import java.util.Scanner;
+
+public class ArbolNavidad {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Introduce la altura del arbol de Navidad: ");
+        int altura = scanner.nextInt();
+        
+        // Dibujar el follaje
+        for (int i = 1; i <= altura; i++) {
+            // Imprimir espacios en blanco
+            for (int j = 1; j <= altura - i; j++) {
+                System.out.print(" ");
+            }
+            // Imprimir asteriscos
+            for (int j = 1; j <= (2 * i - 1); j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+        // Dibujar el tronco
+        int anchoTronco = altura / 3;
+        int altoTronco = altura / 4;
+        if (altoTronco < 1) altoTronco = 1;
+        if (anchoTronco < 1) anchoTronco = 1;
+        
+        for (int i = 1; i <= altoTronco; i++) {
+            for (int j = 1; j <= altura - (anchoTronco / 2) - 1; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= anchoTronco; j++) {
+                System.out.print("|");
+            }
+            System.out.println();
+        }
+        
+        scanner.close();
+    }
+}
